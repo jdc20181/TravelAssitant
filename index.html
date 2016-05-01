@@ -5,29 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-   <script>jQuery(document).ready(function($){
-
-$('.live-search-list li').each(function(){
-$(this).attr('data-search-term', $(this).text().toLowerCase());
-});
-
-$('.live-search-box').on('keyup', function(){
-
-var searchTerm = $(this).val().toLowerCase();
-
-    $('.live-search-list li').each(function(){
-
-        if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
-            $(this).show();
-        } else {
-            $(this).hide();
-        }
-
-    });
-
-});
-
-});</script>
+   <script>src="script.js"</script>
 <style>
   .live-search-list {
 -webkit-box-sizing: border-box;
